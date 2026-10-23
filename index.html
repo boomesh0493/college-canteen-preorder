@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Canteen Pre-Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>College Canteen</h1>
+    <p>Order food online – skip the queue!</p>
+</header>
+
+<main>
+    <section class="menu-section">
+        <h2>Food Menu</h2>
+        <div id="menu" class="menu"></div>
+    </section>
+
+    <div class="side">
+        <section class="cart">
+            <h2>My Cart</h2>
+            <div id="cart-items"></div>
+            <h3>Total: ₹<span id="total">0</span></h3>
+            <button id="place-btn" onclick="placeOrder()">Place Order</button>
+            <button class="secondary" onclick="clearCart()">Clear Cart</button>
+        </section>
+
+        <section class="tracking">
+            <h2>Order Tracking</h2>
+            <p id="order-info">No order placed yet.</p>
+            <div id="steps" class="steps"></div>
+            <button id="status-btn" onclick="updateStatus()" disabled>Demo: Update Status</button>
+        </section>
+    </div>
+</main>
+
+<footer>College Canteen Pre-Order System – Demo Project</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
